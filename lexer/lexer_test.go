@@ -19,6 +19,8 @@ if 5 == 5{
 	return 0;
 };
 4 != 5;
+"foobar"
+"foo bar"
 `
 	l := New(input)
 	tests := []struct {
@@ -87,6 +89,8 @@ if 5 == 5{
 		{token.NEQ, "!="},
 		{token.INT, "5"},
 		{token.SEMICOLON, ";"},
+		{token.STRING, "foobar"},
+		{token.STRING, "foo bar"},
 		{token.EOF, ""},
 	}
 
