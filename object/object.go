@@ -19,6 +19,7 @@ const (
 	FN_OBJ           = "FN"
 	STRING_OBJ       = "STRING"
 	BUILTIN_OBJ      = "BUILTIN"
+	ARRAY_OBJ        = "ARRAY"
 )
 
 type BuiltinFunction func(args ...Object) Object
@@ -135,4 +136,24 @@ func NewEnclosedEnv(outer *Environment) *Environment {
 	env := NewEnvironment()
 	env.outer = outer
 	return env
+}
+
+type Array struct {
+	Elements []Object
+}
+
+func (a *Array) Type() ObjectType { return ARRAY_OBJ }
+
+func (a *Array) Inspect() string {
+	var out bytes.Buffer
+
+	elements := []string{}
+	for _, e := range a.Elements {
+		elements = append(elements, e.Inspect())
+	}
+	out.WriteString("[")
+	out.WriteString(strings.Join(elements, ", "))
+	out.WriteString("]")
+
+	return out.String()
 }
