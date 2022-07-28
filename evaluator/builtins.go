@@ -1,6 +1,10 @@
 package evaluator
 
-import "github.com/smiksha1701/buggy/object"
+import (
+	"fmt"
+
+	"github.com/smiksha1701/buggy/object"
+)
 
 var builtins = map[string]*object.Builtin{
 	"len": &object.Builtin{
@@ -113,6 +117,14 @@ you can find detailed info on Buggy webpage smiksha1701.github.io/Buggy`}
 			case 1:
 			}
 			return newError("wrong number of arguments. got=%d, want<2", len(args))
+		},
+	},
+	"say": &object.Builtin{
+		Fn: func(args ...object.Object) object.Object {
+			for _, arg := range args {
+				fmt.Println(arg.Inspect())
+			}
+			return NULL
 		},
 	},
 }

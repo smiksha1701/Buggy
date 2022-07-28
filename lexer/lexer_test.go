@@ -22,6 +22,7 @@ if 5 == 5{
 "foobar"
 "foo bar"
 [1, 2];
+{"foo": "bar"};
 `
 	l := New(input)
 	tests := []struct {
@@ -98,6 +99,11 @@ if 5 == 5{
 		{token.INT, "2"},
 		{token.RBRACKET, "]"},
 		{token.SEMICOLON, ";"},
+		{token.LBRACE, "{"},
+		{token.STRING, "foo"},
+		{token.COLON, ":"},
+		{token.STRING, "bar"},
+		{token.RBRACE, "}"},
 		{token.EOF, ""},
 	}
 

@@ -27,6 +27,7 @@ const (
 	GT      = ">"
 	// Delimiters
 	COMMA     = ","
+	COLON     = ":"
 	SEMICOLON = ";"
 	LBRACKET  = "["
 	RBRACKET  = "]"
