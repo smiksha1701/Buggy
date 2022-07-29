@@ -1,4 +1,4 @@
-# Buggy ![LittleBuggy](/assets/images/BuggySayingHello.png)
+# Buggy ![LittleBuggy](https://github.com/smiksha1701/Images/blob/7b66b3260b36c88143e3bf43ac073e5362a35bdc/Buggy/BuggySayingHello.png)
 ***Programming language and interpreter***
 
 ## Content
@@ -225,6 +225,6 @@ null
 ## FAQ
 
 ## Errors
-<img src="/assets/images/DeadBuggy.png" alt="drawing" width="50"/>
+<img src="https://github.com/smiksha1701/Images/blob/7b66b3260b36c88143e3bf43ac073e5362a35bdc/Buggy/DeadBuggy.png" alt="drawing" width="50"/>
 
 [^1]: Under development.
