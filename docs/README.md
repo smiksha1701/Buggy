@@ -1,7 +1,17 @@
-# Buggy ![LittleBuggy](/docs/BuggySayingHello.png)
+# Buggy ![LittleBuggy](./docs/BuggySayingHello.png)
 ***Programming language and interpreter***
 
-## Introduction
+## Content
+
+1. [Content](#content)
+2. [Introduction](#introduction)
+3. [Interpreter](#interpreter)
+   1. [Syntax](#syntax)
+   2. [Built-in functions](#built-in-functions)
+4. [FAQ](#faq)
+5. [Errors](#errors)
+
+### Introduction
 Buggy is a programming language with a self-written on Golang interpreter for it. Here is current list of supported features of Buggy:
 * C-like syntax  
 * variable bindings
@@ -14,9 +24,9 @@ Buggy is a programming language with a self-written on Golang interpreter for it
 * an array data structure
 * a string data structure
 
-## Interpreter
-### Syntax
-#### Variable definition
+### Interpreter
+#### Syntax
+##### Variable definition
 Integer
 ```
 >>let foo = 50
@@ -129,7 +139,7 @@ help()
 >>help()
 ```
 ---
-~~help(object.Builtin)~~ *
+~~help(object.Builtin)~~. [^*]
 > Prints out built-in function description.
 
 
@@ -214,4 +224,7 @@ null
 
 ## FAQ
 
-## Errors <img src="/docs/DeadBuggy.png" alt="drawing" width="50"/>
+## Errors
+<img src="./docs/DeadBuggy.png" alt="drawing" width="50"/>
+
+[^1]: Under development.
