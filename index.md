@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Buggy <img src="/assets/img/Buggy.png" alt="drawing" width="50"/>
+# Buggy <img src="{{/assets/img/Buggy.png | relative_url}}" alt="drawing" width="50"/>
 ***Programming language and interpreter***
 
 ## Content
@@ -68,7 +68,7 @@ if (expression){
   SecondBlockOfStatements
 }
 ```
->`expression` should take value `true` or any different from `null` or `false` to evaluate `FirstBlockOfStatements` and should take value `false` or `null` to evaluate `SecondBlockOfStatements`
+>`expression` should take value `true` or any different from `null` and `false` to evaluate `FirstBlockOfStatements` and should take value `false` or `null` to evaluate `SecondBlockOfStatements`
 
 Example
 ```
@@ -229,6 +229,6 @@ null
 ## FAQ
 
 ## Errors
-<img src="https://github.com/smiksha1701/Images/blob/7b66b3260b36c88143e3bf43ac073e5362a35bdc/Buggy/DeadBuggy.png" alt="drawing" width="50"/>
+<img src="{{/assets/img/DeadBuggy.png | relative_url}}" alt="drawing" width="50"/>
 
-[^1]: Under development.
+[^*]: Under development.
