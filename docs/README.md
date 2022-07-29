@@ -1,4 +1,4 @@
-# Buggy ![LittleBuggy](./docs/BuggySayingHello.png)
+# Buggy ![LittleBuggy](/Buggy/docs/BuggySayingHello.png)
 ***Programming language and interpreter***
 
 ## Content
@@ -225,6 +225,6 @@ null
 ## FAQ
 
 ## Errors
-<img src="./docs/DeadBuggy.png" alt="drawing" width="50"/>
+<img src="/Buggy/docs/DeadBuggy.png" alt="drawing" width="50"/>
 
 [^1]: Under development.
