@@ -29,7 +29,7 @@ var builtins = map[string]*object.Builtin{
 			}
 
 			if args[0].Type() != object.ARRAY_OBJ {
-				return newError("argument to `len` not supported, got %s", args[0].Type())
+				return newError("argument to `first` not supported, got %s", args[0].Type())
 			}
 
 			arr := args[0].(*object.Array)
@@ -47,7 +47,7 @@ var builtins = map[string]*object.Builtin{
 			}
 
 			if args[0].Type() != object.ARRAY_OBJ {
-				return newError("argument to `len` not supported, got %s", args[0].Type())
+				return newError("argument to `last` not supported, got %s", args[0].Type())
 			}
 
 			arr := args[0].(*object.Array)
@@ -66,7 +66,7 @@ var builtins = map[string]*object.Builtin{
 			}
 
 			if args[0].Type() != object.ARRAY_OBJ {
-				return newError("argument to `len` not supported, got %s", args[0].Type())
+				return newError("argument to `rest` not supported, got %s", args[0].Type())
 			}
 
 			arr := args[0].(*object.Array)
@@ -87,7 +87,7 @@ var builtins = map[string]*object.Builtin{
 			}
 
 			if args[0].Type() != object.ARRAY_OBJ {
-				return newError("argument to `len` not supported, got %s", args[0].Type())
+				return newError("argument to `push` not supported, got %s", args[0].Type())
 			}
 
 			arr := args[0].(*object.Array)
@@ -103,7 +103,7 @@ var builtins = map[string]*object.Builtin{
 		Fn: func(args ...object.Object) object.Object {
 			switch len(args) {
 			case 0:
-				return &object.String{Value: `Here is list of builtin functions:
+				return &object.String{Value: `Hi again, Buggy language creator speaking. Buggy supports 5 types: integer, boolean, string, array and hash. Here is list of Buggy's built-in functions:
 	help() -> prints out this text
 	help(arg) -> prints out description of function(under development)
 	len(Array) -> returns number of elements in Array 
@@ -111,7 +111,7 @@ var builtins = map[string]*object.Builtin{
 	first(Array) -> returns first element in Array
 	last(Array) -> returns last element in Array
 	rest(Array) -> returns new ARRAY with all elements of Array except first
-	push(Array, NewVal) -> returns new ARRAY with all elements of Array with appended NewVal 
+	push(Array, newVal) -> returns new ARRAY with all elements of Array with added to the end newVal  
 
 you can find detailed info on Buggy webpage smiksha1701.github.io/Buggy`}
 			case 1:

@@ -127,7 +127,7 @@ func (f *Fn) Inspect() string {
 	out.WriteString("fn")
 	out.WriteString("(")
 	out.WriteString(strings.Join(params, ", "))
-	out.WriteString(") {\n")
+	out.WriteString(") {\n	")
 	out.WriteString(f.Body.String())
 	out.WriteString("\n}")
 
