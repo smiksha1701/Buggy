@@ -49,11 +49,14 @@ General structure
 
 ```
 if (expression){  
-  BlockOfStatements
+  FirstBlockOfStatements
 } else {
-  BlockOfStatements
+  SecondBlockOfStatements
 }
 ```
+>`expression` should take value `true` or any different from `null` or `false` to evaluate `FirstBlockOfStatements` and should take value `false` or `null` to evaluate `SecondBlockOfStatements`
+
+Example
 ```
 >>if (true) { 5 }
 5
