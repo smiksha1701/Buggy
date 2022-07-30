@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Buggy <img src="./assets/img/Buggy.png" alt="drawing" width="50"/>
+# Buggy <img src="./assets/img/BuggySayingHello.png" alt="drawing" width="50"/>
 ***Programming language and interpreter***
 
 ## Content
