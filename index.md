@@ -130,7 +130,7 @@ Example
   5
 }]
 ```
-
+---
 ##### Hash definition
 ```
 >>let foo = {1: 2, 2: "a", 3: fn() { 5 }}
